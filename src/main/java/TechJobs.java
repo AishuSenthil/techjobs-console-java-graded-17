@@ -118,7 +118,7 @@ public class TechJobs {
     }
 
     // Print a list of jobs
-//    TASK 1 
+//    TASK 1
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
         for (HashMap<String, String> job : someJobs) {
@@ -133,7 +133,7 @@ public class TechJobs {
         }
 //system.out.print
         if (someJobs.isEmpty()) {
-            System.out.println("No Results");
+            System.out.printf("No Results");
         }
     }
 }

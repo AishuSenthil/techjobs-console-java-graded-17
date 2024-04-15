@@ -72,10 +72,11 @@ public class JobData {
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
 
         for (HashMap<String, String> row : allJobs) {
+//TASK 3 Making it case Insensitive
+            String lowerCaseValue = value.toLowerCase();
+            String aValue = row.get(column).toLowerCase();
 
-            String aValue = row.get(column);
-
-            if (aValue.contains(value)) {
+            if (aValue.contains(lowerCaseValue)) {
                 jobs.add(row);
             }
         }
